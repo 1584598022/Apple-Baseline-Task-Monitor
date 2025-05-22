@@ -111,25 +111,6 @@ If automatic methods fail, you can manually:
 2. Find cookies in the Network tab
 3. Copy and paste them into the script
 
-## Monitoring Training Tasks
-
-The script now specifically monitors for the following Training Tasks:
-- Search - Apple Music Top Hits
-- Search - Apple Music Text Hints
-- Search - Siri Music (End to End) v2 Training
-- Search - Podcasts Top Hits Training
-- Podcast - Tag Correctness
-- Search - Music Text Hints (Side by Side)
-- Search - Music Top Hits (Side by Side)
-- Search - Podcasts Hints (suggestions) Training
-
-When changes are detected in any of these tasks (including their counts), the script will:
-1. Display a nicely formatted table in the console showing task names and counts
-2. Provide notifications through the standard alert channels
-3. Log the changes for review
-
-You can use the `--display-expected` option to always show the expected tasks table, even when no changes are detected.
-
 ## Logging
 
 The script creates a log file `baseline_monitor.log` that keeps track of all activities. This is useful for troubleshooting if you encounter any issues.
