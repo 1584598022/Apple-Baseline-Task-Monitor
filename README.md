@@ -91,18 +91,14 @@ python baseline_monitor.py --display-expected
 ### Login Methods Explained
 
 #### Clean Browser Session (Option 1)
-
 This method is the most reliable as it:
-
 - Opens a fresh browser instance with no existing cookies or cached data
 - Creates a temporary user profile that is deleted after use
 - Provides step-by-step instructions for extracting the necessary cookies
 - Avoids issues with encrypted cookies in existing browsers
 
 #### Existing Browser Cookies (Option 2)
-
 This method attempts to extract cookies from:
-
 - Chrome
 - Edge
 - Firefox
@@ -110,9 +106,7 @@ This method attempts to extract cookies from:
 It may fail if your browser uses encryption that the script cannot access.
 
 #### Manual Cookie Entry (Option 3)
-
 If automatic methods fail, you can manually:
-
 1. Open developer tools in your browser (F12)
 2. Find cookies in the Network tab
 3. Copy and paste them into the script
@@ -120,7 +114,6 @@ If automatic methods fail, you can manually:
 ## Monitoring Training Tasks
 
 The script now specifically monitors for the following Training Tasks:
-
 - Search - Apple Music Top Hits
 - Search - Apple Music Text Hints
 - Search - Siri Music (End to End) v2 Training
@@ -131,7 +124,6 @@ The script now specifically monitors for the following Training Tasks:
 - Search - Podcasts Hints (suggestions) Training
 
 When changes are detected in any of these tasks (including their counts), the script will:
-
 1. Display a nicely formatted table in the console showing task names and counts
 2. Provide notifications through the standard alert channels
 3. Log the changes for review
@@ -183,7 +175,6 @@ The script monitors both the "Eligible Tasks" and "Training Tasks" sections of t
 5. **Table Structure Analysis**: Examines task tables to extract task names and counts
 
 When any changes are detected, the script will:
-
 - Play a voice alert
 - Show a desktop notification
 - Open the Apple Baseline website
